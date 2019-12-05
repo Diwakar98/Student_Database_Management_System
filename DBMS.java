@@ -569,18 +569,18 @@ public class DBMS {
 	}
 	public static void main(String args[])throws IOException{
           //If you want to give comman line argument
-		File student_record_file=new File(args[0]);
-		File course_record=new File(args[1]);
-		File student_query_file=new File(args[2]);
+		//File student_record_file=new File(args[0]);
+		//File course_record=new File(args[1]);
+		//File student_query_file=new File(args[2]);
 
           //If you want to give input as a file
-		// student_record_file=new File("student_record_file.txt");
-		//File course_record=new File("course_file.txt");
-		//File student_query_file=new File("student_query_file.txt");
-		getData(student_record_file,course_record);
+		File student_record_file=new File("Sample_Input_Output/student_record_file.txt");
+		File course_record=new File("Sample_Input_Output/course_file.txt");
+		File student_query_file=new File("Sample_Input_Output/student_query_file.txt");
+	  getData(student_record_file,course_record);
           answerQueries(student_query_file);
           output=output.trim();
-          FileWriter writer=new FileWriter("output5.txt");
+          	FileWriter writer=new FileWriter("Sample_Input_Output/Output.txt");
           writer.write(output);
           writer.close();
 	}

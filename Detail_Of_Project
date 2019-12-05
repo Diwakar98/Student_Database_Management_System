@@ -1,0 +1,22 @@
+
+I am using Linked List and Arrays to store the data about students and their hostels, courses, etc.
+This is an implementation in JAVA. It is purely based on object-oriented programming.
+It uses interfaces Enity_, Student_, GradeInfo_, CourseGrade_.
+There are classes: Student, Course, Hostel, Department, LinkedList.
+The Linked List being used here is generic so that I can make list of Students, Hostels, Department, Courses.
+Student class has his name, his entry_number(unique id), his department, his hostel, list of courses taken by him, his CGPA, total credits he has completed.
+Hostel class has a name and a list of all the students residing in that hostel.
+Department class has a name and a list of all the students in that department.
+Course class has a course nummber, a course title and a list of all the students who has taken this course.
+class DBMS can execute following queries:
+	INFO student:
+		INFO is the keyword. It gives information about student with the given entry number or the given name: Entry number, Name, 		 Department, Hostel, CGPA, and the course-numbers of all courses taken with the obtained grades in each, sorted
+		lexicographically by the course number (each separated by space), in that order.
+		Note: Each course is of 3 credits. While computing CGPA, please ignore the courses which have grade I. CGPA should be 			  rounded off to 2 places of decimal. Use below formula for computation of CGPA. Here n is the number of courses taken 					by student. Grade I represents that the course is still going and has not been yet completed.
+				 
+	SHARE students_entry_number__entity_name:
+		SHARE is the keyword. It provides space separated list of the entry numbers of all students who share the given entity 				with him or her.
+		Note:The result of query SHARE will be sorted in lexicographical order
+
+	COURSETITLE course_number:
+		COURSETITLE is the keyword. It provides the full title of the given course number.

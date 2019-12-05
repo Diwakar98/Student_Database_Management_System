@@ -8,4 +8,4 @@ For proper input, see line number 570(main function) in "DBMS.java" file
 
 You would get the output as a text file named "Output.txt" under the inner directory named "Sample_Input_Output"
 
-Sample Input and Output are also given. (input.txt and output.txt)
+Sample Input and Output are also given in the inner directory "Sample_Input_Output"
